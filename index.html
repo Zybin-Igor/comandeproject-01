@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>watchcharm</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" />
+
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+		rel="stylesheet" />
+	<link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+	<!--Header шапка сайту-->
+	<header class="header">
+		<div class="header-container container ">
+				<a class="header-logo" href="./index.html">watchcharm</a>
+				<nav class="header-nav">
+				<ul class="header-nav-list">
+					<li class="header-nav-item">
+						<a class="header-nav-link current" href="#home">Home</a>
+					</li>
+					<li class="header-nav-item">
+						<a class="header-nav-link current" href="#about-us">About Us</a>
+					</li>
+					<li class="header-nav-item">
+						<a class="header-nav-link current" href="#catalog">Catalog</a>
+					</li>
+					<li class="header-nav-item">
+						<a class="header-nav-link current" href="#sale">Sale</a>
+					</li>
+					<li class="header-nav-item">
+						<a class="header-nav-link current" href="#reviews">Reviews</a>
+					</li>
+					<li class="header-nav-item">
+						<a class="header-nav-link current" href="#contact-us">Contact Us</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="header-soc">
+			<ul class="header-soc-list">
+				<li class="header-soc-item"><a class="header-social-link" href="https://www.facebook.com/goITclub/">
+						<svg class="social-link-item" width="36" height="36">
+							<use href="./images/icons-two.svg#icon-facebook-header"></use>
+						</svg>
+					</a></li>
+				<li class="header-soc-item"><a class="header-social-link" href="">
+						<svg class="social-link-item" width="36" height="36">
+							<use href="./images/icons-two.svg#icon-instagram-header"></use>
+						</svg>
+					</a></li>
+				<li class="header-soc-item"><a class="header-social-link" href="">
+						<svg class="social-link-item" width="36" height="36">
+							<use href="./images/icons-two.svg#icon-youtube-header"></use>
+						</svg>
+					</a></li>
+			</ul>
+		</div>
+		<button class="header-btn" type="button" data-menu-open>
+			<svg class="header-btn-icon" width="28" height="14"><use href="./images/icons-two.svg#icon-menu-open"></use></svg>
+		</button>
+		</div>
+		<div class="header-modal-menu" data-menu hidden>
+			<div class="container container-menu">
+				<button class="header-menu-btm" type="button" data-menu-close>
+					<svg class="menu-close-icon" width="8" height="8">
+						<use href="./images/icons.svg#icon-close"></use>
+					</svg>
+				</button>
+				<nav class="header-menu-nav">
+					<ul class="menu-list">
+						<li>
+							<a class="menu-item menu-item-current" href="">Studio</a>
+						</li>
+						<li>
+							<a class="menu-item" href="">Portfolio</a>
+						</li>
+						<li>
+							<a class="menu-item" href="">Contacts</a>
+						</li>
+					</ul>
+				</nav>
+				<address class="menu-address">
+					<ul class="menu-address-list">
+						<li>
+							<a class="menu-address-link menu-address-link-current" href="tel:+110001111111">+11 (000) 111-11-11</a>
+						</li>
+						<li>
+							<a class="menu-address-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+						</li>
+					</ul>
+				</address>
+				<ul class="social-link-menu">
+					<li class="social-list-point social-list-point-footer">
+						<a class="footer-social-link-point" href="">
+							<svg class="social-link-item" width="24" height="24">
+								<use href="./images/icons.svg#icon-instagram"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="social-list-point social-list-point-footer">
+						<a class="footer-social-link-point" href="">
+							<svg class="social-link-item" width="24" height="24">
+								<use href="./images/icons.svg#icon-twitter"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="social-list-point social-list-point-footer">
+						<a class="footer-social-link-point" href="">
+							<svg class="social-link-item" width="24" height="24">
+								<use href="./images/icons.svg#icon-facebook"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="social-list-point social-list-point-footer">
+						<a class="footer-social-link-point" href="">
+							<svg class="social-link-item" width="24" height="24">
+								<use href="./images/icons.svg#icon-linkedin"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<!-- section-1 Hero -->
+	<section class="hero section">
+		<div class="container">
+			<hi class="hero-title">Welcome to our <span class="hero-title-span"> collection</span> of premium watches</hi>
+			<p class="hero-text">Our watches are not just timepieces, but also an expression of your personality and
+				lifestyle. From classic designs to modern ones, we have a watch to suit every taste and occasion.</p>
+		<div class="clients-container">
+			<ul class="clients">
+				<li>
+					<div class="client-back">
+						<picture><source srcset="./images/Ellipse_21-1-1x.png 1x, ./images/Ellipse 21-1-2x.png 2x"></picture>
+						<img src="./images/Ellipse_21-1-1x.png" alt="">
+					</div>
+				</li>
+				<li>
+					<div class="client-back">
+						<picture><source srcset=""></picture>
+					</div>
+				</li>
+				<li>
+					<div class="client-back">
+						<picture><source srcset="./images/Ellipse_22-2-1x.png 1x, ./images/Ellipse_22-2-2x.png 2x"></picture>
+					</div>
+				</li>
+			</ul>
+			<a href="">Scroll down</a>
+		</div>
+			<img class="hero-img-clock" src="./images/hero-img-1x.png" alt="clock">
+
+		</div>
+	</section>
+	<!-- section-2 About us -->
+	<section class="about-us section hidden">
+		<div class="container">
+			<h2 class="about-as-title">About Us</h2>
+			<p class="about-as-text">Welcome to our premium watch collection, where luxury and style meet functionality and
+				precision. Our selection of timepieces embodies the very best in Swiss craftsmanship and engineering, ensuring
+				that you'll always have a reliable and stylish accessory on your wrist.
+				At our premium watch collection, we believe that a watch is more than just a timekeeping device – it's a
+				statement piece that reflects your personality and style. So why settle for anything less than the best?</p>
+
+			<button class="about-as-title-button" type="button" data-modal-open>
+				View catalog
+			</button>
+			<img class src="about-as-img" alt="clock">
+		</div>
+	</section>
+	<!-- section-3 Catalog -->
+	<section class="catalog section hidden">
+		<div class="catalog-clock">
+			<h2 class="catalog-title">Catalog</h2>
+			<ul class="catalog-list">
+				<li class="catalog-card">
+					<div class="catalog-icon-container">
+						<img src="" alt="">
+					</div>
+					<h3 class="catalog-title-clock">Garmin Fenix 7X Pro Sapphire Solar </h3>
+					<p class="catalog-text">
+						€500
+					</p>
+				</li>
+				<li class="catalog-card">
+					<div class="catalog-icon-container">
+						<img src="" alt="">
+					</div>
+					<h3 class="catalog-title-clock">Garmin Fenix 7X Pro Sapphire Solar </h3>
+					<p class="catalog-text">
+						€500
+					</p>
+				</li>
+				<li class="catalog-card">
+					<div class="catalog-icon-container">
+						<img src="" alt="">
+					</div>
+					<h3 class="catalog-title-clock">Garmin Fenix 7X Pro Sapphire Solar </h3>
+					<p class="catalog-text">
+						€500
+					</p>
+				</li>
+				<li class="catalog-card">
+					<div class="catalog-icon-container">
+						<img src="" alt="">
+					</div>
+					<h3 class="catalog-title-clock">Garmin Fenix 7X Pro Sapphire Solar </h3>
+					<p class="catalog-text">
+						€500
+					</p>
+				</li>
+				<li class="catalog-card">
+					<div class="catalog-icon-container">
+						<img src="" alt="">
+					</div>
+					<h3 class="catalog-title-clock">Garmin Fenix 7X Pro Sapphire Solar </h3>
+					<p class="catalog-text">
+						€500
+					</p>
+				</li>
+				<li class="catalog-card">
+					<div class="catalog-icon-container">
+						<img src="" alt="">
+					</div>
+					<h3 class="catalog-title-clock">Garmin Fenix 7X Pro Sapphire Solar </h3>
+					<p class="catalog-text">
+						€500
+					</p>
+				</li>
+			</ul>
+			<div class="container">
+				<h2 class="catalog-title-text">Choose your story, making every moment unique. Time is your style, and we reveal
+					it.</h2>
+				<button class="catalog-title-button" type="button" data-modal-open>
+					Contact Us
+				</button>
+			</div>
+		</div>
+	</section>
+	<!-- section-4 Sale -->
+	<section class="product section hidden">
+		<div class="product-gallery">
+			<h2 class="product-title">Sale</h2>
+			<div class="thumbnails">
+				<img src="./images/sale-img-1-1x.png" alt="View 1" onclick="showImage('./images/sale-img-1-1x.png')" width="80" height="80">
+				<img src="./images/sale-img-2-1x.png" alt="View 2" onclick="showImage('./images/sale-img-2-1x.png')" width="80" height="80">
+				<img src="./images/sale-img-3-1x.png" alt="View 3" onclick="showImage('./images/sale-img-3-1x.png')" width="80" height="80">
+				<img src="./images/sale-img-4-1x.png" alt="View 4" onclick="showImage('./images/sale-img-4-1x.png')" width="80" height="80">
+			</div>
+			<div class="main-image">
+				<img id="mainImage" src="./images/sale-img-5-grand-clock-2x.png" alt="Main Image">
+			</div>
+		</div>
+
+		<div class="product-info">
+			<h2>MARQ® Commander (Gen 2) – Carbon Edition</h2>
+			<p class="product-tag">Product tag: 706587</p>
+			<div class="price">
+				<span class="new-price">€1500</span>
+				<span class="old-price">€3000</span>
+			</div>
+			<p class="description">
+				The Garmin MARQ Commander Gen 2 Carbon Edition is a modern smartwatch...
+			</p>
+			<div class="tags">
+				<span>Fused carbon fiber</span>
+				<span>Grade-5 Titanium</span>
+				<span>Athlete</span>
+				<span>Golfer</span>
+				<span>Commander</span>
+				<span>Adventurer</span>
+			</div>
+		</div>
+	</section>
+	<!-- section-5 Reviews -->
+	<section class="review section hidden">
+		<div class="container container-reviews">
+			<h2 class="reviews-title">Reviews</h2>
+			<ul class="reviews-list">
+				<li class="reviews-list-strate">
+					<div class="reviews-card-img">
+						<img src="./images/Ellipse 22-2-2x.png" alt="John Wax" width="56" height="56" />
+					</div>
+					<h3 class="reviews-name">John Wax</h3>
+					<p class="reviews-text">Buying a watch from was the best choice for me. The design is perfectly combined
+						with high quality materials. The strap fits nicely on the hand, and the mechanism works flawlessly.</p>
+
+				</li>
+				<li class="reviews-list-strate">
+					<div class="reviews-card-img">
+						<img src="./images/Ellipse 21-1-1x.png" alt="Victoria Romashenko" width="56" height="56" />
+					</div>
+					<h3 class="reviews-name">Victoria Romashenko</h3>
+					<p class="reviews-text">Can't take my eyes off my watch from. Every time I put it on, it is admired by those
+						around me. The build quality and attention to detail make it a real gem among my accessories.</p>
+
+				</li>
+				<li class="reviews-list-strate">
+					<div class="reviews-card-img">
+						<img src="./images/Ellipse 23-3-1x.png" alt="Anastasia Trachuk" width="56" height="56" />
+					</div>
+					<h3 class="reviews-name">Anastasia Trachuk</h3>
+					<p class="reviews-text">My watch from is a real masterpiece. Every detail impresses with the high quality of
+						execution. Special features like [specify features] make it an indispensable companion in my daily life.
+					</p>
+
+				</li>
+			</ul>
+		</div>
+	</section>
+	<section></section>
+	<section></section>
+	<footer></footer>
+
+	<script src="./js/click.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,295 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+.hidden {
+	display: none;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: #FFFFFF;
+	color: #434455
+}
+
+ul,
+ol {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+button {
+	cursor: pointer;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+/* -----------------common-------------------- */
+/* ---Total-mob-conteiner */
+.container {
+	max-width: 375px;
+	padding: 0px;
+	margin: 0 auto;
+}
+
+/* ---Total-mob-conteiner */
+/* -----planshet-@media----- */
+@media screen and (min-width: 768px) {
+	.container {
+		max-width: 768px;
+	}
+}
+
+/* -----mob-@media----- */
+/* -----desktop-@media-1---- */
+@media screen and (min-width: 1150px) {
+	.container {
+		max-width: 1280px;
+		}
+}
+
+
+/* --------------common---------------- */
+
+
+/* ------section-4 Sale------- */
+.product {
+	/* display: flex; */
+	gap: 40px;
+	background-color: #FBFBFB;
+	border-radius: 32px;
+	padding: 40px;
+	max-width: 1150px;
+	margin: 0 auto;
+	flex-wrap: wrap;
+}
+
+.product-gallery {
+	display: flex;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+
+.thumbnails {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.thumbnails img,
+.main-image img {
+	width: 100px;
+	height: auto;
+	border-radius: 16px;
+	cursor: pointer;
+}
+
+.main-image img {
+	width: 300px;
+	border-radius: 24px;
+}
+
+.product-info {
+	background-color: #3350E9;
+	padding: 32px;
+	border-radius: 40px;
+	color: white;
+	max-width: 500px;
+	flex: 1;
+}
+
+.product-info h2 {
+	font-size: 24px;
+	margin-bottom: 8px;
+}
+
+.product-tag {
+	font-size: 12px;
+	opacity: 0.8;
+}
+
+.price {
+	display: flex;
+	gap: 16px;
+	font-size: 20px;
+	margin: 16px 0;
+}
+
+.new-price {
+	background: white;
+	color: #3350E9;
+	padding: 4px 12px;
+	border-radius: 20px;
+	font-weight: bold;
+}
+
+.old-price {
+	text-decoration: line-through;
+	opacity: 0.5;
+}
+
+.description {
+	font-size: 14px;
+	line-height: 1.6;
+}
+
+.tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	margin-top: 20px;
+}
+
+.tags span {
+	background-color: rgba(255, 255, 255, 0.1);
+	border: 1px solid white;
+	border-radius: 16px;
+	padding: 4px 10px;
+	font-size: 12px;
+}
+
+@media screen and (max-width: 767px) {
+	.product {
+		flex-direction: column;
+		padding: 20px;
+	}
+
+	.main-image img {
+		width: 100%;
+	}
+
+	.product-info {
+		padding: 20px;
+	}
+}
+
+.main-image img {
+	transition: opacity 0.4s ease;
+	opacity: 1;
+}
+
+.main-image img.hidden {
+	opacity: 0;
+	pointer-events: none;
+}
+
+.thumbnails img.active {
+	outline: 2px solid #3350E9;
+	border-radius: 12px;
+}
+
+/* ------section-5 Reviews------ */
+.reviews {
+}
+
+/* ----Desktop section-5 Reviews */
+
+.section {
+	padding: 100px 0;
+}
+.container-reviews {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+.reviews-title {
+font-weight: 600;
+font-size: 48px;
+justify-content: start;
+/* line-height: 44px; */ 
+line-height: 0.92;
+letter-spacing: -0.02em;
+color: #0C0C0C;
+margin-bottom: 40px;
+}
+
+.reviews-list {
+	display: flex;
+  flex-direction: row;
+	flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+
+}
+.reviews-list-strate {
+	width: calc((100% - 40px) / 3);
+  background-color: #F3F3F3;
+  border-radius: 30px;
+  padding: 32px 36px;
+  box-sizing: border-box; /* чтобы padding входил в height */
+
+}
+.reviews-card-img {
+	display: flex;
+  justify-content: center; /* по горизонтали */
+  align-items: center;     /* по вертикали (если нужно) */
+	padding: 0;
+	margin-bottom: 24px;
+}
+.reviews-name {
+	font-weight: 500;
+font-size: 18px;
+
+/* line-height: 20px; */ 
+line-height: 1.1;
+letter-spacing: -0.02em;
+text-align: center;
+color: #0C0C0C;
+margin-bottom: 8px;
+}
+.reviews-text {
+	font-weight: 500;
+font-size: 16px;
+
+/* line-height: 20px; */ 
+line-height: 1.25;
+letter-spacing: -0.02em;
+text-align: center;
+color: rgba(12, 12, 12, 0.4);
+}
+/* Начальное состояние для анимации */
+.reviews-list-strate {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Когда элемент появляется на экране */
+.reviews-list-strate.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* ------section-5 Reviews------ */
